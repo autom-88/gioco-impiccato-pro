@@ -53,3 +53,23 @@ Il progetto è stato sviluppato a scopo didattico per approfondire:
 ---
 
 ## 📂 Struttura del Progetto
+
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+
+🎯 Obiettivi Didattici
+
+Questo progetto permette di esercitarsi con:
+
+Manipolazione del DOM
+Gestione Eventi
+Programmazione Procedurale
+Logica di gioco
+Responsive Design
+Debug JavaScript
+
+👨‍💻 Autore
+
+Sviluppato da autom-88
