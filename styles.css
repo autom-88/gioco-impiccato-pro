@@ -1,0 +1,130 @@
+body {
+    background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+h1,
+h2 {
+    margin: 20px 0;
+}
+
+#word-container,
+#word {
+    font-size: 32px;
+    letter-spacing: 10px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+#attempts,
+#used,
+#guessed-letters {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* =====================
+   SVG HANGMAN
+===================== */
+
+.hangman-svg {
+    stroke: white;
+    stroke-width: 3;
+    fill: none;
+    margin: 20px auto;
+}
+
+#head,
+#body,
+#arm1,
+#arm2,
+#leg1,
+#leg2 {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* =====================
+   TASTIERA
+===================== */
+
+#keyboard {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    max-width: 420px;
+    margin: 20px auto;
+}
+
+.key {
+    padding: 12px;
+    background: rgba(255,255,255,0.15);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 6px;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.2s;
+}
+
+.key:hover {
+    background: rgba(255,255,255,0.25);
+}
+
+/* =====================
+   BOTTONI
+===================== */
+
+button {
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#reset-button {
+    background: #4caf50;
+    color: white;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+@media (max-width: 600px) {
+
+    #keyboard {
+        grid-template-columns: repeat(6, 1fr);
+        max-width: 320px;
+    }
+
+    #word-container,
+    #word {
+        font-size: 24px;
+        letter-spacing: 6px;
+    }
+
+    .key {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+
