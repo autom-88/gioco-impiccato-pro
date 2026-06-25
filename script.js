@@ -9,9 +9,6 @@ const parts = ["head","body","arm1","arm2","leg1","leg2"];
 
 start();
 
-/* =========================
-   START GAME
-========================= */
 function start() {
     word = words[Math.floor(Math.random() * words.length)];
     hidden = Array(word.length).fill("_");
@@ -20,12 +17,9 @@ function start() {
 
     updateUI();
     draw();
-    createKeyboard(); // 🔥 IMPORTANTE
+    createKeyboard();
 }
 
-/* =========================
-   KEYBOARD VISUAL
-========================= */
 function createKeyboard() {
     const keyboard = document.getElementById("keyboard");
     keyboard.innerHTML = "";
@@ -45,9 +39,6 @@ function createKeyboard() {
     });
 }
 
-/* =========================
-   GUESS LETTER (KEYBOARD)
-========================= */
 function handleGuess(letter, btn) {
 
     if (used.includes(letter)) return;
@@ -74,9 +65,6 @@ function handleGuess(letter, btn) {
     check();
 }
 
-/* =========================
-   DRAW HANGMAN
-========================= */
 function draw() {
     parts.forEach((id, index) => {
         const el = document.getElementById(id);
@@ -86,9 +74,6 @@ function draw() {
     });
 }
 
-/* =========================
-   UI UPDATE
-========================= */
 function updateUI() {
     document.getElementById("word").innerText = hidden.join(" ");
 
@@ -99,9 +84,7 @@ function updateUI() {
         "Lettere usate: " + used.join(", ");
 }
 
-/* =========================
-   WIN / LOSE CHECK
-========================= */
+
 function check() {
 
     if (!hidden.includes("_")) {
@@ -119,9 +102,6 @@ function check() {
     }
 }
 
-/* =========================
-   RESET GAME
-========================= */
 function resetGame() {
     start();
 }
