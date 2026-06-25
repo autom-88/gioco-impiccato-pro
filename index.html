@@ -11,18 +11,13 @@
 
     <h1>🎮 Impiccato Pro 🎮</h1>
 
-    <!-- =========================
-         HANGMAN SVG
-    ========================== -->
     <svg height="250" width="200" class="hangman-svg">
 
-        <!-- base -->
         <line x1="10" y1="240" x2="150" y2="240"/>
         <line x1="50" y1="240" x2="50" y2="20"/>
         <line x1="50" y1="20" x2="120" y2="20"/>
         <line x1="120" y1="20" x2="120" y2="40"/>
 
-        <!-- body parts -->
         <circle id="head" cx="120" cy="60" r="20"/>
         <line id="body" x1="120" y1="80" x2="120" y2="140"/>
         <line id="arm1" x1="120" y1="100" x2="90" y2="120"/>
@@ -32,25 +27,13 @@
 
     </svg>
 
-    <!-- =========================
-         WORD DISPLAY
-    ========================== -->
     <div id="word"></div>
 
-    <!-- =========================
-         INFO
-    ========================== -->
     <div id="attempts"></div>
     <div id="used"></div>
 
-    <!-- =========================
-         VIRTUAL KEYBOARD
-    ========================== -->
     <div id="keyboard"></div>
 
-    <!-- =========================
-         RESET BUTTON
-    ========================== -->
     <button onclick="resetGame()">🔁 Nuova Partita 🔁</button>
 
 </div>
