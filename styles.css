@@ -38,9 +38,6 @@ h2 {
     font-size: 18px;
 }
 
-/* =====================
-   SVG HANGMAN
-===================== */
 
 .hangman-svg {
     stroke: white;
@@ -59,9 +56,6 @@ h2 {
     transition: opacity 0.3s ease;
 }
 
-/* =====================
-   TASTIERA
-===================== */
 
 #keyboard {
     display: grid;
@@ -86,9 +80,6 @@ h2 {
     background: rgba(255,255,255,0.25);
 }
 
-/* =====================
-   BOTTONI
-===================== */
 
 button {
     padding: 12px 20px;
@@ -104,9 +95,6 @@ button {
     color: white;
 }
 
-/* =====================
-   RESPONSIVE
-===================== */
 
 @media (max-width: 600px) {
 
